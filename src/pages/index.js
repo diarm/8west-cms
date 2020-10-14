@@ -29,6 +29,10 @@ export const query = graphql`
   }
 }`;
 
+function saveFile() {
+  console.log('hi');
+}
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="News" />
@@ -41,6 +45,7 @@ const IndexPage = ({ data }) => (
         </li>
       ))}
     </ul>
+    <input type='button' onClick={() => saveFile()} value='Save Text Box' /> 
   </Layout>
 )
 
